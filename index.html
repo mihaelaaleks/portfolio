@@ -3,61 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Mihaela Aleksandrova - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    
 </head>
 <body>
     <div class="container">
-        <header>
+        <header>                                  
+            <button id="theme-toggle" aria-label="toggle">
+                ☀️/🌙
+            </button>
             <img src="https://ui-avatars.com/api/?name=M+A&background=add8e6" alt="Your Profile Picture" class="profile-img">
-            <h1>Your Name</h1>
-            <div class="title">Your Title / Professional Summary</div>
+            <h1>Mihaela Aleksandrova</h1>
+            <div class="title">Full Stack Software Engineer</div>
             <div class="contact">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-                <a href="https://github.com/yourusername">GitHub</a>
+                <a href="./assets/CV_Aleksandrova_v2.pdf">CV</a>
+                <a href="mailto:mihaela.aleksandrova00@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/mihaela-aleksandrova-133498117/">LinkedIn</a>
+                <a href="https://github.com/mihaelaaleks">GitHub</a>
             </div>
         </header>
 
+        <script src="main.js"></script>
+
         <section>
             <h2>About Me</h2>
-            <p>Write a brief introduction about yourself, your career goals, and what drives you professionally. Keep it concise but engaging.</p>
+            <p>Software engineer with expertise in full-stack development & IoT systems. 
+                Combines technical expertise with strong business acumen, enabling effective translation
+                of complex requirements into user-focused and scalable solutions.</p>
         </section>
 
         <section>
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Job Title</h3>
-                <div class="date">Company Name | Jan 2020 - Present</div>
-                <p>Description of your responsibilities and achievements. Use specific examples and quantify results when possible.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Previous Job Title</h3>
-                <div class="date">Previous Company | Jan 2018 - Dec 2019</div>
-                <p>Description of your responsibilities and achievements at your previous position.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Degree Name</h3>
-                <div class="date">University Name | Graduation Year</div>
-                <p>Relevant coursework, achievements, or activities.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
+            <h2>Technical Skills</h2>
+            <h4>Back-end</h4>
             <div class="skills">
-                <span class="skill">Skill 1</span>
-                <span class="skill">Skill 2</span>
-                <span class="skill">Skill 3</span>
-                <span class="skill">Skill 4</span>
-                <span class="skill">Skill 5</span>
+                <span class="skill">Python</span>
+                <span class="skill">Java</span>
+                <span class="skill">C#</span>
+                <span class="skill">PHP</span>
+                <span class="skill">Django</span>
+                <span class="skill">FastAPI</span>
+                <span class="skill">.NET</span>
+                <span class="skill">Laravel</span>
+            </div>
+            <h4>Front-end</h4>
+            <div class="skills">
+                <span class="skill">React</span>
+                <span class="skill">Vue.js</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Web Components</span>
+                <span class="skill">Lit Elements</span>
+                <span class="skill">SASS</span>
+            </div>
+            <h4>DevOps & Tools</h4>
+            <div class="skills">
+                <span class="skill">Docker</span>
+                <span class="skill">CI/CD</span>
+                <span class="skill">Git</span>
+                <span class="skill">PostgreSQL</span>
+                <span class="skill">MongoDB</span>
+                <span class="skill">Jest</span>
+                <span class="skill">Playwright</span>
             </div>
         </section>
+
+        <section class="exp">
+            <!-- Fallback content if JS is disabled -->
+                <noscript>
+                    <h2>Experience</h2>
+                    <div class="experience-item">
+                        <h3>Software Engineer Intern</h3>
+                        <div class="date">OpenRemote | Open Source IoT Platform | Oct 2024 - Present</div>
+                        <p>Built interfaces and custom Web Components for real-time notification management and viewing.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Student Assistant</h3>
+                        <div class="date">Fontys Hogeschool ICT | Feb 2023 - Sep 2024</div>
+                        <p>Mentored 100+ students through Python and C# programming fundamentals.</p>
+                        <p>Created comprehensive technical documentation for Python environment setup and best practices.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Software Engineer Intern</h3>
+                        <div class="date"> OpenRemote | Open Source IoT Platform | Feb 2023 - Jun 2023</div>
+                        <p>Developed custom IoT data visualization widgets using TypeScript and Web Components, improving
+                            data readability for enterprise clients.</p>
+                        <p>Enhanced developer experience by resolving critical rendering issues in frontend widget framework.</p>
+                        <p>Streamlined development workflow by configuring and optimizing Gradle/Java build processes.</p>
+                    </div>
+                </noscript>
+        </section>
+        <section class="edu"></section>
     </div>
 </body>
 </html>
