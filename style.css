@@ -6,6 +6,14 @@
     --background-color: #f5f6fa;
 }
 
+  /* Dark theme */
+  .dark-theme {
+    --primary-color: #f5f6fa;
+    --secondary-color: #7995a0;
+    --accent-color: #0984e3;
+    --background-color: #2d3436;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -69,6 +77,11 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+h4 {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
 .experience-item, .education-item {
     margin-bottom: 1.5rem;
 }
@@ -91,10 +104,21 @@ h2 {
 }
 
 .skill {
-    background-color: white;
+    background-color: var(--accent-color);
+    color: var(--background-color);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
